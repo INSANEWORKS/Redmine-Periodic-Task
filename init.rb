@@ -15,8 +15,8 @@ Redmine::Plugin.register :periodictask do
   author_url 'https://jperelli.com.ar/'
 
   project_module :periodictask do
-    permission :periodictask, {:periodictask => [:index, :edit]}
+    permission :periodictask, {:periodictasks => [:index, :edit]}
   end
 
-  menu :project_menu, :periodictask, { :controller => 'periodictask', :action => 'index' }, :caption => 'Periodic Task', :after => :settings, :param => :project_id
+  menu :project_menu, :periodictask, { :controller => 'periodictasks', :action => 'index' }, :caption => 'Periodic Task', :after => :settings, :param => :project_id
 end

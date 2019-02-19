@@ -98,7 +98,7 @@ To help developing this plugin there is a Vagrantfile working, you can use it wi
     vagrant up --provider lxc
     vagrant ssh -c "/app/redmine/bin/rails server -b0.0.0.0 -p8888"
 
-Then go to http://192.168.2.100:8888/ and login with
+Then go to <http://192.168.2.100:8888/> and login with
 
     user: admin
     pass: admin
@@ -107,8 +107,8 @@ You should have a project named *project1* with `periodictask` installed
 
 ## Authors
 
-  - [Julian Perelli](https://jperelli.com.ar/) (Current Maintainer)
-  - [Tanguy de Courson](https://github.com/myneid/) (Original Author)
+* [Julian Perelli](https://jperelli.com.ar/) (Current Maintainer)
+* [Tanguy de Courson](https://github.com/myneid/) (Original Author)
 
 ## License
 

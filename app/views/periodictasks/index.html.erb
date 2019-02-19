@@ -2,7 +2,7 @@
 
 <div class="contextual">
 <%= link_to(l(:label_new_periodic_task),
-                          {:controller => 'periodictask', :action => 'new', :project_id => @project},
+                          {:controller => 'periodictasks', :action => 'new', :project_id => @project},
                           :class => 'icon icon-add') %>
 </div>
 
@@ -25,13 +25,13 @@
       <td><%= a.next_run_date %></td>
       <td>
   <%= link_to l(:button_edit),
-                            {:controller => 'periodictask', :action => 'edit', :id => a.id, :project_id => @project},
+                            {:controller => 'periodictasks', :action => 'edit', :id => a.id, :project_id => @project},
                             :class => 'icon icon-edit',
                             :accesskey => accesskey(:edit),
                             :onclick => 'Element.show("edit-task"); return false;' %>
       </td>
       <td>
-        <%= delete_link({ :controller => 'periodictask', :action => 'destroy', :id => a.id, :project_id => @project },
+        <%= delete_link({ :controller => 'periodictasks', :action => 'destroy', :id => a.id, :project_id => @project },
                                                  class: 'icon icon-del',
                                                  title: l(:button_delete)) %>
       </td>

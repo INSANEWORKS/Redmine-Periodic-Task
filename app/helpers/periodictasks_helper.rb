@@ -1,4 +1,4 @@
-module PeriodictaskHelper
+module PeriodictasksHelper
 
   def checklistPluginInstalled?
     return Redmine::Plugin.all.any? {|p| p.id == :redmine_checklists} && Object.const_defined?('ChecklistTemplate')
