@@ -1,5 +1,7 @@
 # Japanese strings go here for Rails i18n
 ja:
+  project_module_periodictask: 定期チケット
+  label_periodictask: 定期チケット
   label_tracker: トラッカー
   label_author: 著者
   label_assigned_to_user: 担当者
@@ -14,9 +16,9 @@ ja:
   label_periodic_tasks: 繰り返しチケット
   label_create_periodic_task: 作成
   label_save_periodic_task: 保存
-  label_scheduled_tasks: These are the currently scheduled tasks
+  label_scheduled_tasks: 定期チケット一覧
   label_no_project: No project ID supplied
-  label_remove_periodic_task: remove periodic task
+  label_remove_periodic_task: 削除
   label_interval: 間隔
   label_set_start_date: 開始日を設定
   label_due_date: 期日
@@ -29,6 +31,9 @@ ja:
   label_unit_week: 週間後
   label_unit_month: ヶ月後
   label_unit_year: 年後
-  flash_task_created: Periodic Task is created
-  flash_task_saved: Periodic Task is saved
-  subject_variables: 利用可能な変数 **DAY** (01-31), **WEEK** (01-53), **MONTH** (01-12), **MONTHNAME**, **PREVIOUS_MONTH** (01-12) and **PREVIOUS_MONTHNAME** (January - December), **YEAR** (YYYY)
+  flash_task_created: 定期チケットを作成しました
+  flash_task_saved: 保存しました
+  subject_variables: 利用可能な変数 **[NEXT|PREV]_DATE** (1-31), **[NEXT|PREV]_WEEK** (1-53), **[NEXT|PREV]_MONTH** (1-12), **[NEXT|PREV]_MONTHNAME** (January - December), **[NEXT|PREV]_YEAR** (YYYY)
+  label_last_error: Last error
+  label_issue_custom_fields: カスタムフィールド
+  permission_periodictask: 定期チケットの管理

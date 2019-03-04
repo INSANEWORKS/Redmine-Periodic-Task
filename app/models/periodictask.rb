@@ -62,13 +62,21 @@ class Periodictask < ActiveRecord::Base
   private
   def parse_macro(str, now)
     if str.respond_to?(:gsub!) && str.present?
-      str.gsub!('**DAY**', now.strftime("%d"))
-      str.gsub!('**WEEK**', now.strftime("%W"))
-      str.gsub!('**MONTH**', now.strftime("%m"))
-      str.gsub!('**MONTHNAME**', I18n.localize(now, :format => "%B"))
-      str.gsub!('**YEAR**', now.strftime("%Y"))
-      str.gsub!('**PREVIOUS_MONTHNAME**', I18n.localize(now - 2592000, :format => "%B"))
-      str.gsub!('**PREVIOUS_MONTH**', I18n.localize(now - 2592000, :format => "%m"))
+      str.gsub!('**DATE**', Time.now.strftime("%-d"))
+      str.gsub!('**PREV_DATE**', Time.now.yesterday.strftime("%-d"))
+      str.gsub!('**NEXT_DATE**', Time.now.tomorrow.strftime("%-d"))
+      str.gsub!('**WEEK**', Time.now.strftime("%-W"))
+      str.gsub!('**PREV_WEEK**', Time.now.prev_week.strftime("%-W"))
+      str.gsub!('**NEXT_WEEK**', Time.now.next_week.strftime("%-W"))
+      str.gsub!('**MONTH**', Time.now.strftime("%-m"))
+      str.gsub!('**PREV_MONTH**', Time.now.prev_month.strftime("%-m"))
+      str.gsub!('**NEXT_MONTH**', Time.now.next_month.strftime("%-m"))
+      str.gsub!('**MONTHNAME**', I18n.localize(Time.now, :format => "%-B"))
+      str.gsub!('**PREV_MONTHNAME**', I18n.localize(Time.now.prev_month, :format => "%-B"))
+      str.gsub!('**NEXT_MONTHNAME**', I18n.localize(Time.now.next_month, :format => "%-B"))
+      str.gsub!('**YEAR**', Time.now.strftime("%-Y"))
+      str.gsub!('**NEXT_YEAR**', Time.now.next_year.strftime("%-Y"))
+      str.gsub!('**PREV_YEAR**', Time.now.prev_year.strftime("%-Y"))
     end
     str
   end

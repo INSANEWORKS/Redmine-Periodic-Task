@@ -31,4 +31,4 @@ it:
   label_unit_year: anni
   flash_task_created: Periodic Task creato
   flash_task_saved: Periodic Task salvato
-  subject_variables: I possibili valori sono **DAY** (01-31), **WEEK** (01-53), **MONTH** (01-12), **MONTHNAME** and **PREVIOUS_MONTHNAME** (Gennaio - Dicembre), **YEAR** (YYYY)
+  subject_variables: I possibili valori sono **[NEXT|PREV]_DATE** (1-31), **[NEXT|PREV]_WEEK** (1-53), **[NEXT|PREV]_MONTH** (1-12), **[NEXT|PREV]_MONTHNAME** (Gennaio - Dicembre), **[NEXT|PREV]_YEAR** (YYYY)
