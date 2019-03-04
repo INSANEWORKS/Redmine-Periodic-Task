@@ -1,9 +1,7 @@
 # German strings go here for Rails i18n
 de:
-  field_interval_number: Intervallnummer
-  field_interval_unit: Intervalleinheit
-  field_tracker: Tracker
-  field_category: Kategorie
+  label_tracker: Tracker
+  label_author: Autor
   label_assigned_to_user: Zugewiesen an
   no_members_in_project: Dieses Projekt hat keine Mitglieder
   no_categories_in_project: Dieses Projekt hat keine Kategorien
@@ -23,11 +21,14 @@ de:
   label_set_start_date: Beginn setzen
   label_due_date: Setze Abgabedatum in
   label_description: Beschreibung
+  label_estimated_hours: Geschätzter Aufwand
+  label_estimated_hours_after: Stunden
   label_issue_category: Ticket-Kategorie
   label_unit_day: Tag(e)
+  label_unit_business_day: Arbeitstag(e)
   label_unit_week: Woche(n)
   label_unit_month: Monat(e)
   label_unit_year: Jahr(e)
   flash_task_created: Aufgabe wurde angelegt
   flash_task_saved: Aufgabe wurde gespeichert
-  subject_variables: Mögliche Variablen sind **WEEK** (01-53), **MONTH** (01-12), **MONTHNAME** (Januar - Dezember), **YEAR** (YYYY)
+  subject_variables: Mögliche Variablen sind **DAY** (01-31), **WEEK** (01-53), **MONTH** (01-12), **MONTHNAME** und **PREVIOUS_MONTHNAME** (Januar - Dezember), **YEAR** (YYYY)

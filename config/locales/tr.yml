@@ -1,9 +1,7 @@
 # Turkish strings by atopcu for Rails i18n
 tr:
-  field_interval_number: Tekrarlama aralığı
-  field_interval_unit: Tekrarlama birimi
-  field_tracker: İş Tipi
-  field_category: Kategori
+  label_tracker: İş Tipi
+  label_author: Yazar
   label_assigned_to_user: Atanan
   no_members_in_project: Tanımlı üye yok!
   no_categories_in_project: Tanımlı kategori yok!
@@ -22,12 +20,15 @@ tr:
   label_interval: Tekrarlama
   label_set_start_date: Başlama tarihini set et
   label_due_date: Bitiş süresi
+  label_estimated_hours: Kalan zaman
+  label_estimated_hours_after: Saat
   label_description: Açıklama
   label_issue_category: İş kategorisi
   label_unit_day: gün
+  label_unit_business_day: iş günü
   label_unit_week: hafta
   label_unit_month: ay
   label_unit_year: yıl
   flash_task_created: Periyodik iş oluşturuldu
   flash_task_saved: Periyokik iş kaydedildi
-  subject_variables: Kullanılabilir makrolar; **WEEK** (01-53), **MONTH** (01-12), **MONTHNAME** (January - December), **YEAR** (YYYY)
+  subject_variables: Kullanılabilir makrolar; **DAY** (01-31), **WEEK** (01-53), **MONTH** (01-12), **MONTHNAME** ve **PREVIOUS_MONTHNAME** (January - December), **YEAR** (YYYY)

@@ -4,7 +4,8 @@ Check for and assign periodic tasks
 Example:
   rake redmine:check_periodictasks RAILS_ENV="production"
 END_DESC
-require File.expand_path(File.dirname(__FILE__) + "/../../../../config/environment")
+
+Rails.configuration.active_job.queue_adapter = :inline if Rails.configuration.respond_to?(:active_job)
 
 namespace :redmine do
     task :check_periodictasks => :environment do
